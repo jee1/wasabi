@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C2B399264D55A76163F3C84 /* Pods_Wasabi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7C637E3D53719EEF88BFFA /* Pods_Wasabi.framework */; };
+		1DBA401FC0C8A611875DF21A /* Pods_WasabiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61ECFBB6C3235DE09FF8B15A /* Pods_WasabiTests.framework */; };
+		62887186F5F252D7B4F69777 /* Pods_WasabiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBBA15C5554AD6D94BA0187 /* Pods_WasabiUITests.framework */; };
+		C2431445203FD5F200085F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2431444203FD5F200085F6B /* AppDelegate.swift */; };
+		C2431447203FD5F200085F6B /* FuntionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2431446203FD5F200085F6B /* FuntionTestViewController.swift */; };
+		C243144A203FD5F200085F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2431448203FD5F200085F6B /* Main.storyboard */; };
+		C243144C203FD5F200085F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C243144B203FD5F200085F6B /* Assets.xcassets */; };
+		C243144F203FD5F200085F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C243144D203FD5F200085F6B /* LaunchScreen.storyboard */; };
+		C243145A203FD5F200085F6B /* WasabiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2431459203FD5F200085F6B /* WasabiTests.swift */; };
+		C2431465203FD5F200085F6B /* WasabiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2431464203FD5F200085F6B /* WasabiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2431456203FD5F200085F6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2431439203FD5F200085F6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2431440203FD5F200085F6B;
+			remoteInfo = Wasabi;
+		};
+		C2431461203FD5F200085F6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2431439203FD5F200085F6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2431440203FD5F200085F6B;
+			remoteInfo = Wasabi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00DF2E8DD58E3431E260B82C /* Pods-Wasabi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wasabi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wasabi/Pods-Wasabi.debug.xcconfig"; sourceTree = "<group>"; };
+		61ECFBB6C3235DE09FF8B15A /* Pods_WasabiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasabiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		649BCEA0A9A7012F1A43344F /* Pods-WasabiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasabiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasabiUITests/Pods-WasabiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E7C637E3D53719EEF88BFFA /* Pods_Wasabi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wasabi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F4D91E580E7225257E29F4D /* Pods-WasabiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasabiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasabiTests/Pods-WasabiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD056AC3A2110C6A2CC96720 /* Pods-WasabiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasabiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WasabiTests/Pods-WasabiTests.release.xcconfig"; sourceTree = "<group>"; };
+		C2431441203FD5F200085F6B /* Wasabi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wasabi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2431444203FD5F200085F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2431446203FD5F200085F6B /* FuntionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuntionTestViewController.swift; sourceTree = "<group>"; };
+		C2431449203FD5F200085F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C243144B203FD5F200085F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C243144E203FD5F200085F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2431450203FD5F200085F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2431455203FD5F200085F6B /* WasabiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WasabiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2431459203FD5F200085F6B /* WasabiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasabiTests.swift; sourceTree = "<group>"; };
+		C243145B203FD5F200085F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2431460203FD5F200085F6B /* WasabiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WasabiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2431464203FD5F200085F6B /* WasabiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasabiUITests.swift; sourceTree = "<group>"; };
+		C2431466203FD5F200085F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D908B5E7EDC75F8CCD5E320A /* Pods-Wasabi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wasabi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wasabi/Pods-Wasabi.release.xcconfig"; sourceTree = "<group>"; };
+		DBBBA15C5554AD6D94BA0187 /* Pods_WasabiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasabiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC08A45F2AD7E3C0F8A51062 /* Pods-WasabiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasabiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WasabiUITests/Pods-WasabiUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C243143E203FD5F200085F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2B399264D55A76163F3C84 /* Pods_Wasabi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2431452203FD5F200085F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBA401FC0C8A611875DF21A /* Pods_WasabiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C243145D203FD5F200085F6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62887186F5F252D7B4F69777 /* Pods_WasabiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2431438203FD5F200085F6B = {
+			isa = PBXGroup;
+			children = (
+				C2431443203FD5F200085F6B /* Wasabi */,
+				C2431458203FD5F200085F6B /* WasabiTests */,
+				C2431463203FD5F200085F6B /* WasabiUITests */,
+				C2431442203FD5F200085F6B /* Products */,
+				FAE24DE5A3FD743CBBD025C8 /* Pods */,
+				E75F5678ED4EC55A11D1E789 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C2431442203FD5F200085F6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2431441203FD5F200085F6B /* Wasabi.app */,
+				C2431455203FD5F200085F6B /* WasabiTests.xctest */,
+				C2431460203FD5F200085F6B /* WasabiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2431443203FD5F200085F6B /* Wasabi */ = {
+			isa = PBXGroup;
+			children = (
+				C2431444203FD5F200085F6B /* AppDelegate.swift */,
+				C2431446203FD5F200085F6B /* FuntionTestViewController.swift */,
+				C2431448203FD5F200085F6B /* Main.storyboard */,
+				C243144B203FD5F200085F6B /* Assets.xcassets */,
+				C243144D203FD5F200085F6B /* LaunchScreen.storyboard */,
+				C2431450203FD5F200085F6B /* Info.plist */,
+			);
+			path = Wasabi;
+			sourceTree = "<group>";
+		};
+		C2431458203FD5F200085F6B /* WasabiTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2431459203FD5F200085F6B /* WasabiTests.swift */,
+				C243145B203FD5F200085F6B /* Info.plist */,
+			);
+			path = WasabiTests;
+			sourceTree = "<group>";
+		};
+		C2431463203FD5F200085F6B /* WasabiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2431464203FD5F200085F6B /* WasabiUITests.swift */,
+				C2431466203FD5F200085F6B /* Info.plist */,
+			);
+			path = WasabiUITests;
+			sourceTree = "<group>";
+		};
+		E75F5678ED4EC55A11D1E789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E7C637E3D53719EEF88BFFA /* Pods_Wasabi.framework */,
+				61ECFBB6C3235DE09FF8B15A /* Pods_WasabiTests.framework */,
+				DBBBA15C5554AD6D94BA0187 /* Pods_WasabiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAE24DE5A3FD743CBBD025C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00DF2E8DD58E3431E260B82C /* Pods-Wasabi.debug.xcconfig */,
+				D908B5E7EDC75F8CCD5E320A /* Pods-Wasabi.release.xcconfig */,
+				8F4D91E580E7225257E29F4D /* Pods-WasabiTests.debug.xcconfig */,
+				BD056AC3A2110C6A2CC96720 /* Pods-WasabiTests.release.xcconfig */,
+				649BCEA0A9A7012F1A43344F /* Pods-WasabiUITests.debug.xcconfig */,
+				EC08A45F2AD7E3C0F8A51062 /* Pods-WasabiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2431440203FD5F200085F6B /* Wasabi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2431469203FD5F200085F6B /* Build configuration list for PBXNativeTarget "Wasabi" */;
+			buildPhases = (
+				092DAF1BEC1652593FCB04EF /* [CP] Check Pods Manifest.lock */,
+				C243143D203FD5F200085F6B /* Sources */,
+				C243143E203FD5F200085F6B /* Frameworks */,
+				C243143F203FD5F200085F6B /* Resources */,
+				B54A1B8714D3136907A7D009 /* [CP] Embed Pods Frameworks */,
+				9B9693435E37C88D94BFD0E3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wasabi;
+			productName = Wasabi;
+			productReference = C2431441203FD5F200085F6B /* Wasabi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2431454203FD5F200085F6B /* WasabiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C243146C203FD5F200085F6B /* Build configuration list for PBXNativeTarget "WasabiTests" */;
+			buildPhases = (
+				057B151DF1954561E1815749 /* [CP] Check Pods Manifest.lock */,
+				C2431451203FD5F200085F6B /* Sources */,
+				C2431452203FD5F200085F6B /* Frameworks */,
+				C2431453203FD5F200085F6B /* Resources */,
+				52DF1BB8D738A514B0C039A3 /* [CP] Embed Pods Frameworks */,
+				C67F8D83A69FFB7E1C28CF35 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2431457203FD5F200085F6B /* PBXTargetDependency */,
+			);
+			name = WasabiTests;
+			productName = WasabiTests;
+			productReference = C2431455203FD5F200085F6B /* WasabiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C243145F203FD5F200085F6B /* WasabiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C243146F203FD5F200085F6B /* Build configuration list for PBXNativeTarget "WasabiUITests" */;
+			buildPhases = (
+				31660F9285CC8902BE3D45A3 /* [CP] Check Pods Manifest.lock */,
+				C243145C203FD5F200085F6B /* Sources */,
+				C243145D203FD5F200085F6B /* Frameworks */,
+				C243145E203FD5F200085F6B /* Resources */,
+				8E8281E5A8A97FF7D372A0FF /* [CP] Embed Pods Frameworks */,
+				8F06E016BF31099747D2B832 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2431462203FD5F200085F6B /* PBXTargetDependency */,
+			);
+			name = WasabiUITests;
+			productName = WasabiUITests;
+			productReference = C2431460203FD5F200085F6B /* WasabiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2431439203FD5F200085F6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = 1002237;
+				TargetAttributes = {
+					C2431440203FD5F200085F6B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C2431454203FD5F200085F6B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2431440203FD5F200085F6B;
+					};
+					C243145F203FD5F200085F6B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C2431440203FD5F200085F6B;
+					};
+				};
+			};
+			buildConfigurationList = C243143C203FD5F200085F6B /* Build configuration list for PBXProject "Wasabi" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2431438203FD5F200085F6B;
+			productRefGroup = C2431442203FD5F200085F6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2431440203FD5F200085F6B /* Wasabi */,
+				C2431454203FD5F200085F6B /* WasabiTests */,
+				C243145F203FD5F200085F6B /* WasabiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C243143F203FD5F200085F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C243144F203FD5F200085F6B /* LaunchScreen.storyboard in Resources */,
+				C243144C203FD5F200085F6B /* Assets.xcassets in Resources */,
+				C243144A203FD5F200085F6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2431453203FD5F200085F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C243145E203FD5F200085F6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		057B151DF1954561E1815749 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WasabiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		092DAF1BEC1652593FCB04EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wasabi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31660F9285CC8902BE3D45A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WasabiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52DF1BB8D738A514B0C039A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasabiTests/Pods-WasabiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E8281E5A8A97FF7D372A0FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasabiUITests/Pods-WasabiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F06E016BF31099747D2B832 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasabiUITests/Pods-WasabiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B9693435E37C88D94BFD0E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wasabi/Pods-Wasabi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B54A1B8714D3136907A7D009 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Wasabi/Pods-Wasabi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wasabi/Pods-Wasabi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C67F8D83A69FFB7E1C28CF35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasabiTests/Pods-WasabiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C243143D203FD5F200085F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2431447203FD5F200085F6B /* FuntionTestViewController.swift in Sources */,
+				C2431445203FD5F200085F6B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2431451203FD5F200085F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C243145A203FD5F200085F6B /* WasabiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C243145C203FD5F200085F6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2431465203FD5F200085F6B /* WasabiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2431457203FD5F200085F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2431440203FD5F200085F6B /* Wasabi */;
+			targetProxy = C2431456203FD5F200085F6B /* PBXContainerItemProxy */;
+		};
+		C2431462203FD5F200085F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2431440203FD5F200085F6B /* Wasabi */;
+			targetProxy = C2431461203FD5F200085F6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2431448203FD5F200085F6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2431449203FD5F200085F6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C243144D203FD5F200085F6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C243144E203FD5F200085F6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2431467203FD5F200085F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2431468203FD5F200085F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C243146A203FD5F200085F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00DF2E8DD58E3431E260B82C /* Pods-Wasabi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wasabi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = plab.Wasabi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C243146B203FD5F200085F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D908B5E7EDC75F8CCD5E320A /* Pods-Wasabi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wasabi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = plab.Wasabi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C243146D203FD5F200085F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F4D91E580E7225257E29F4D /* Pods-WasabiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WasabiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = plab.WasabiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wasabi.app/Wasabi";
+			};
+			name = Debug;
+		};
+		C243146E203FD5F200085F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD056AC3A2110C6A2CC96720 /* Pods-WasabiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WasabiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = plab.WasabiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wasabi.app/Wasabi";
+			};
+			name = Release;
+		};
+		C2431470203FD5F200085F6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 649BCEA0A9A7012F1A43344F /* Pods-WasabiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WasabiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = plab.WasabiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wasabi;
+			};
+			name = Debug;
+		};
+		C2431471203FD5F200085F6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC08A45F2AD7E3C0F8A51062 /* Pods-WasabiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WasabiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = plab.WasabiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wasabi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C243143C203FD5F200085F6B /* Build configuration list for PBXProject "Wasabi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2431467203FD5F200085F6B /* Debug */,
+				C2431468203FD5F200085F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2431469203FD5F200085F6B /* Build configuration list for PBXNativeTarget "Wasabi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C243146A203FD5F200085F6B /* Debug */,
+				C243146B203FD5F200085F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C243146C203FD5F200085F6B /* Build configuration list for PBXNativeTarget "WasabiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C243146D203FD5F200085F6B /* Debug */,
+				C243146E203FD5F200085F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C243146F203FD5F200085F6B /* Build configuration list for PBXNativeTarget "WasabiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2431470203FD5F200085F6B /* Debug */,
+				C2431471203FD5F200085F6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2431439203FD5F200085F6B /* Project object */;
+}

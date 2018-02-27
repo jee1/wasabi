@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Funtion Test View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FuntionTestViewController" customModule="Wasabi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jYD-Nr-gbF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TTSCell" id="eUi-Ht-Z9A" customClass="TTSCell" customModule="Wasabi" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eUi-Ht-Z9A" id="jIj-Yv-JfS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tY3-80-RNH">
+                                                    <rect key="frame" x="15" y="6" width="58" height="30"/>
+                                                    <state key="normal" title="TTS 재생"/>
+                                                    <connections>
+                                                        <action selector="touchUpInsidePlayButton:" destination="eUi-Ht-Z9A" eventType="touchUpInside" id="oSi-md-8g9"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TTS테스트입니다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kja-wH-uVo">
+                                                    <rect key="frame" x="83" y="11.5" width="119.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tY3-80-RNH" firstAttribute="centerY" secondItem="jIj-Yv-JfS" secondAttribute="centerY" id="EGm-Bc-Zeg"/>
+                                                <constraint firstItem="Kja-wH-uVo" firstAttribute="leading" secondItem="tY3-80-RNH" secondAttribute="trailing" constant="10" id="Q3S-dh-MLX"/>
+                                                <constraint firstItem="tY3-80-RNH" firstAttribute="leading" secondItem="jIj-Yv-JfS" secondAttribute="leading" constant="15" id="gLJ-c9-lpA"/>
+                                                <constraint firstItem="Kja-wH-uVo" firstAttribute="centerY" secondItem="jIj-Yv-JfS" secondAttribute="centerY" id="kg2-6r-llM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="playButton" destination="tY3-80-RNH" id="Dnr-4C-L7K"/>
+                                            <outlet property="ttsTestLabel" destination="Kja-wH-uVo" id="7et-d7-kw7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jYD-Nr-gbF" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="6OT-Am-P5k"/>
+                            <constraint firstItem="jYD-Nr-gbF" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="hPN-6B-m63"/>
+                            <constraint firstItem="jYD-Nr-gbF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jhQ-rN-808"/>
+                            <constraint firstItem="jYD-Nr-gbF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uKC-cw-YvG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="functionTableView" destination="jYD-Nr-gbF" id="8IM-E4-5ia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
