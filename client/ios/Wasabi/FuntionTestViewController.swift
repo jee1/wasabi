@@ -29,9 +29,6 @@ class FuntionTestViewController: UIViewController {
 }
 
 extension FuntionTestViewController : UITableViewDelegate {
-//    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-//        return CGFloat(50.0)
-//    }
 }
 
 extension FuntionTestViewController : UITableViewDataSource{
