@@ -28,7 +28,7 @@ def crawl_rss(url):
 
 def run():
 
-    # TODO RSS URL 목록을 DB 에서 가져오는 코드 작성 필요 함. (서버 셋팅 필요)
+    # TODO RSS URL 목록을 DB 에서 가져오는 코드 작성 필요 함.
     # 일단, 기능 개발을 위해 구글뉴스의 RSS 를 가져와서 진행함.
     urls = ["https://news.google.com/news/rss/?ned=kr&gl=KR&hl=ko"]
 
@@ -39,11 +39,14 @@ def run():
 
         for feed in feeds:
             news = News(title=feed[0], link_url=feed[1], published=feed[2], status_cd='I')
+            print(news)
 
             try:
-                print(news)
+                db_session.add(news)
+                db_session.commit()
             except Exception as ex:
                 print(ex)
+                db_session.rollback()
                 continue
 
 if __name__ == '__main__':
