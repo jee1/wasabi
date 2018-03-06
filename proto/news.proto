@@ -1,0 +1,12 @@
+package wasabi.protocol;
+
+message News {
+    required string linkUrlSha1 = 1;
+    required string title = 2;
+    required string linkUrl = 3;
+    optional string published = 4;
+    optional string contents = 5;
+    required string regDt = 6;
+    optional string scrapingDt = 7;
+    required string statusCd = 8;
+}
