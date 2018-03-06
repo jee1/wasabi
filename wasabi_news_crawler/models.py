@@ -12,14 +12,14 @@ class News(Base):
 
     __tablename__ = 'news'
 
-    seq         = Column(Integer, primary_key=True, autoincrement=True)
-    title       = Column(String(1000))
-    link_url    = Column(String(1000))
-    published   = Column(TIMESTAMP)
-    contents    = Column(String)
-    reg_dt      = Column(TIMESTAMP)
-    scraping_dt = Column(TIMESTAMP)
-    status_cd   = Column(String)
+    title         = Column(String(1000))
+    link_url      = Column(String(1000))
+    link_url_sha1 = Column(String(40), primary_key=True)
+    published     = Column(TIMESTAMP)
+    contents      = Column(String)
+    reg_dt        = Column(TIMESTAMP)
+    scraping_dt   = Column(TIMESTAMP)
+    status_cd     = Column(String)
 
     def __repr__(self):
         return "<News('%s', '%s', '%s', '%s'>" % (self.title, self.link_url, self.published, self.status_cd)

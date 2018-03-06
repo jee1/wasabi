@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 
+import hashlib
 import feedparser
 import models
 from models import News
@@ -38,7 +39,8 @@ def run():
         db_session = models.db_session
 
         for feed in feeds:
-            news = News(title=feed[0], link_url=feed[1], published=feed[2], status_cd='I')
+            link_url_sha1 = hashlib.sha1(feed[1].encode()).hexdigest()
+            news = News(title=feed[0], link_url=feed[1], link_url_sha1 = link_url_sha1, published=feed[2], status_cd='I')
             print(news)
 
             try:
