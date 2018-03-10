@@ -1,0 +1,6 @@
+feedparser
+sqlalchemy
+PyMySQL
+grpcio
+grpcio-tools
+django
