@@ -4,3 +4,5 @@ PyMySQL
 grpcio
 grpcio-tools
 django
+newspaper3k
+nltk
