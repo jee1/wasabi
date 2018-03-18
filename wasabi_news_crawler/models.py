@@ -17,7 +17,7 @@ class News(Base):
     link_url_sha1 = Column(String(40), primary_key=True)
     published     = Column(TIMESTAMP)
     contents      = Column(String)
-    summary       = Column(String)
+    summarize     = Column(String)
     keywords      = Column(String)
     reg_dt        = Column(TIMESTAMP)
     scraping_dt   = Column(TIMESTAMP)

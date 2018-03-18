@@ -62,14 +62,14 @@ def run():
 
             article = getContents(feed[1])
 
-            news = News(title=feed[0],
-                        link_url=feed[1],
+            news = News(title         = feed[0],
+                        link_url      = feed[1],
                         link_url_sha1 = link_url_sha1,
-                        published=feed[2],
-                        contents=article[0],
-                        summary=article[2],
-                        keywords=article[1],
-                        status_cd='I')
+                        published     = feed[2],
+                        contents      = article[0],
+                        summarize     = article[2],
+                        keywords      = article[1],
+                        status_cd     = 'I')
             print(news)
 
             try:
