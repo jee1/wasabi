@@ -18,10 +18,10 @@ class News(Base):
     published     = Column(TIMESTAMP)
     contents      = Column(String)
     summarize     = Column(String)
-    keywords      = Column(String)
+    keywords      = Column(String(1000))
     reg_dt        = Column(TIMESTAMP)
     scraping_dt   = Column(TIMESTAMP)
-    status_cd     = Column(String)
+    status_cd     = Column(String(1))
 
     def __repr__(self):
         return "<News('%s', '%s', '%s', '%s'>" % (self.title, self.link_url, self.published, self.status_cd)

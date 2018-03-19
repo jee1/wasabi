@@ -5,8 +5,11 @@ import hashlib
 import feedparser
 import models
 import nltk
+import time
 from models import News
 from newspaper import Article
+from newspaper.article import ArticleDownloadState
+from sqlalchemy.orm.exc import NoResultFound
 
 nltk.download('punkt')
 
@@ -38,10 +41,28 @@ def getContents(url):
     :return: text, keywords, summary
     '''
 
-    article = Article(url);
-    article.download()
-    article.parse()
-    article.nlp()
+    article = Article(url, language='ko')
+
+    try:
+        article.download()
+
+        loopCnt = 0
+        while True:
+            loopCnt += 1
+            if article.download_state != ArticleDownloadState.NOT_STARTED: break
+            if loopCnt > 10: break
+            time.sleep(1)
+
+
+        if article.download_state == ArticleDownloadState.SUCCESS:
+            article.parse()
+            article.nlp()
+        else:
+            print(article.download_exception_msg)
+
+    except Exception as ex:
+        print('Handling exception:', ex)
+        return '','',''
 
     return article.text, article.keywords, article.summary
 
@@ -58,6 +79,9 @@ def run():
         db_session = models.db_session
 
         for feed in feeds:
+
+            time.sleep(0.5)
+
             link_url_sha1 = hashlib.sha1(feed[1].encode()).hexdigest()
 
             article = getContents(feed[1])
@@ -68,15 +92,31 @@ def run():
                         published     = feed[2],
                         contents      = article[0],
                         summarize     = article[2],
-                        keywords      = article[1],
+                        keywords      = ','.join(article[1]),
                         status_cd     = 'I')
-            print(news)
 
             try:
+                temp_news = db_session.query(News).filter(News.link_url_sha1==link_url_sha1).one()
+                if temp_news.contents == news.contents: continue
+                temp_news.title = news.title
+                temp_news.contents = news.contents
+                temp_news.summarize = news.summarize
+                temp_news.keywords = news.keywords
+                temp_news.published = news.published
+                temp_news.status_cd = 'C'
+                db_session.commit()
+                continue
+            except NoResultFound as e:
+                print('')
+
+            try:
+                print(news)
                 db_session.add(news)
+                if news.summarize != '':
+                    news.status_cd = 'C'
                 db_session.commit()
             except Exception as ex:
-                print(ex)
+                print('Handling exception:', ex)
                 db_session.rollback()
                 continue
 
