@@ -24,4 +24,15 @@ class News(Base):
     status_cd     = Column(String(1))
 
     def __repr__(self):
-        return "<News('%s', '%s', '%s', '%s'>" % (self.title, self.link_url, self.published, self.status_cd)
+        return "<News(title='%s', link_url='%s', published='%s', status_cd='%s')>" % (self.title, self.link_url, self.published, self.status_cd)
+
+
+class RssSites(Base):
+
+    __tablename__ = 'rss_sites'
+
+    url         = Column(String(1024), primary_key=True)
+    description = Column(String(1000))
+
+    def __repr__(self):
+        return "<RssSites(url='%s', description='%s')>" % (self.url, self.description)
