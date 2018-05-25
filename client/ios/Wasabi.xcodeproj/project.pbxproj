@@ -10,6 +10,9 @@
 		1C2B399264D55A76163F3C84 /* Pods_Wasabi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E7C637E3D53719EEF88BFFA /* Pods_Wasabi.framework */; };
 		1DBA401FC0C8A611875DF21A /* Pods_WasabiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61ECFBB6C3235DE09FF8B15A /* Pods_WasabiTests.framework */; };
 		62887186F5F252D7B4F69777 /* Pods_WasabiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBBA15C5554AD6D94BA0187 /* Pods_WasabiUITests.framework */; };
+		C2027A9320A6845700EB6FDE /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = C2027A9220A6845700EB6FDE /* news.json */; };
+		C2027A9520A686C800EB6FDE /* HomeNewsViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2027A9420A686C800EB6FDE /* HomeNewsViewContrller.swift */; };
+		C20465DC20A68162009DD5FC /* TextNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20465DB20A68162009DD5FC /* TextNewsCell.swift */; };
 		C2431445203FD5F200085F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2431444203FD5F200085F6B /* AppDelegate.swift */; };
 		C2431447203FD5F200085F6B /* FuntionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2431446203FD5F200085F6B /* FuntionTestViewController.swift */; };
 		C243144A203FD5F200085F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2431448203FD5F200085F6B /* Main.storyboard */; };
@@ -43,6 +46,9 @@
 		8E7C637E3D53719EEF88BFFA /* Pods_Wasabi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wasabi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4D91E580E7225257E29F4D /* Pods-WasabiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasabiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WasabiTests/Pods-WasabiTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD056AC3A2110C6A2CC96720 /* Pods-WasabiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasabiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WasabiTests/Pods-WasabiTests.release.xcconfig"; sourceTree = "<group>"; };
+		C2027A9220A6845700EB6FDE /* news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
+		C2027A9420A686C800EB6FDE /* HomeNewsViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsViewContrller.swift; sourceTree = "<group>"; };
+		C20465DB20A68162009DD5FC /* TextNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNewsCell.swift; sourceTree = "<group>"; };
 		C2431441203FD5F200085F6B /* Wasabi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wasabi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2431444203FD5F200085F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2431446203FD5F200085F6B /* FuntionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuntionTestViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2027A9120A6843800EB6FDE /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				C2027A9220A6845700EB6FDE /* news.json */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 		C2431438203FD5F200085F6B = {
 			isa = PBXGroup;
 			children = (
@@ -114,9 +128,12 @@
 		C2431443203FD5F200085F6B /* Wasabi */ = {
 			isa = PBXGroup;
 			children = (
+				C2027A9120A6843800EB6FDE /* resource */,
 				C2431444203FD5F200085F6B /* AppDelegate.swift */,
 				C2431446203FD5F200085F6B /* FuntionTestViewController.swift */,
 				C2431448203FD5F200085F6B /* Main.storyboard */,
+				C2027A9420A686C800EB6FDE /* HomeNewsViewContrller.swift */,
+				C20465DB20A68162009DD5FC /* TextNewsCell.swift */,
 				C243144B203FD5F200085F6B /* Assets.xcassets */,
 				C243144D203FD5F200085F6B /* LaunchScreen.storyboard */,
 				C2431450203FD5F200085F6B /* Info.plist */,
@@ -177,7 +194,6 @@
 				C243143E203FD5F200085F6B /* Frameworks */,
 				C243143F203FD5F200085F6B /* Resources */,
 				B54A1B8714D3136907A7D009 /* [CP] Embed Pods Frameworks */,
-				9B9693435E37C88D94BFD0E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,8 +212,6 @@
 				C2431451203FD5F200085F6B /* Sources */,
 				C2431452203FD5F200085F6B /* Frameworks */,
 				C2431453203FD5F200085F6B /* Resources */,
-				52DF1BB8D738A514B0C039A3 /* [CP] Embed Pods Frameworks */,
-				C67F8D83A69FFB7E1C28CF35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,8 +231,6 @@
 				C243145C203FD5F200085F6B /* Sources */,
 				C243145D203FD5F200085F6B /* Frameworks */,
 				C243145E203FD5F200085F6B /* Resources */,
-				8E8281E5A8A97FF7D372A0FF /* [CP] Embed Pods Frameworks */,
-				8F06E016BF31099747D2B832 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -283,6 +295,7 @@
 			files = (
 				C243144F203FD5F200085F6B /* LaunchScreen.storyboard in Resources */,
 				C243144C203FD5F200085F6B /* Assets.xcassets in Resources */,
+				C2027A9320A6845700EB6FDE /* news.json in Resources */,
 				C243144A203FD5F200085F6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,66 +371,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		52DF1BB8D738A514B0C039A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasabiTests/Pods-WasabiTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8E8281E5A8A97FF7D372A0FF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasabiUITests/Pods-WasabiUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F06E016BF31099747D2B832 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasabiUITests/Pods-WasabiUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9B9693435E37C88D94BFD0E3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wasabi/Pods-Wasabi-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B54A1B8714D3136907A7D009 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,30 +380,17 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Wasabi/Pods-Wasabi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wasabi/Pods-Wasabi-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C67F8D83A69FFB7E1C28CF35 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WasabiTests/Pods-WasabiTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -460,7 +400,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2027A9520A686C800EB6FDE /* HomeNewsViewContrller.swift in Sources */,
 				C2431447203FD5F200085F6B /* FuntionTestViewController.swift in Sources */,
+				C20465DC20A68162009DD5FC /* TextNewsCell.swift in Sources */,
 				C2431445203FD5F200085F6B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,6 +572,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Wasabi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = plab.Wasabi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -645,6 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Wasabi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = plab.Wasabi;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,6 @@
+framework module Pods_Wasabi {
+  umbrella header "Pods-Wasabi-umbrella.h"
+
+  export *
+  module * { export * }
+}
