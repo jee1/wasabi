@@ -1,10 +1,12 @@
-import re
-import networkx
 import itertools
-from konlpy.tag import Twitter
 from collections import Counter
 
+import networkx
+import re
+from konlpy.tag import Twitter
+
 twitter = Twitter()
+
 
 def xplit(*delimiters):
     return lambda value: re.split('|'.join([re.escape(delimiter) for delimiter in delimiters]), value)
@@ -46,6 +48,7 @@ def get_sentences(text):
             sentences.append(Sentence(candidate, index))
             index += 1
     return sentences
+
 
 def build_graph(sentences):
     graph = networkx.Graph()

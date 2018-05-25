@@ -1,3 +1,8 @@
+konlpy
+nlp
+python-dateutil
+networkx
+chardet
 feedparser
 sqlalchemy
 PyMySQL
@@ -6,3 +11,4 @@ grpcio-tools
 django
 newspaper3k
 nltk
+translate_api
