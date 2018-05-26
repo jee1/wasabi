@@ -13,7 +13,6 @@ class TextNewsCell: UICollectionViewCell {
     @IBOutlet weak var summaryLabel: UILabel!
     func load(newsItem:JSON){
         titleLabel.text = newsItem.dictionary?["title"]?.stringValue
-        summaryLabel.text = newsItem.dictionary?["summarize"]?.stringValue
-        
+        summaryLabel.text = newsItem.dictionary?["contents"]?.stringValue
     }
 }

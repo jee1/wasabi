@@ -10,7 +10,8 @@ import UIKit
 import SwiftyJSON
 
 
-private let reuseIdentifier = "TextNewsCell"
+private let textCellId = "TextNewsCell"
+private let imageCellId = "ImageNewsCell"
 
 class HomeNewsViewContrller: UICollectionViewController {
 
@@ -64,10 +65,21 @@ class HomeNewsViewContrller: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? TextNewsCell
-    
+        var isImageCell:Bool = false
+        if let imageUrlString = jsonNews?.dictionary?["news"]?.array?[indexPath.row].dictionary?["image_url"]?.stringValue, imageUrlString.count > 0 {
+            isImageCell = true
+        }
         
-        cell?.load(newsItem: (jsonNews?.dictionary?["news"]?.array?[indexPath.row])!)
+        let cell:UICollectionViewCell?
+        if isImageCell{
+            let imgCell = collectionView.dequeueReusableCell(withReuseIdentifier: imageCellId, for: indexPath) as? ImageNewsCell
+            imgCell?.load(newsItem: (jsonNews?.dictionary?["news"]?.array?[indexPath.row])!)
+            cell = imgCell
+        }else{
+            let textCell = collectionView.dequeueReusableCell(withReuseIdentifier: textCellId, for: indexPath) as? TextNewsCell
+            textCell?.load(newsItem: (jsonNews?.dictionary?["news"]?.array?[indexPath.row])!)
+            cell = textCell
+        }
     
         return cell!
     }
@@ -76,7 +88,10 @@ class HomeNewsViewContrller: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
         
-        navigationController?.pushViewController(NewsDetailViewController(urlString: "http://www.yonhapnewstv.co.kr/MYH20180525021400038/"), animated: true)
+        if let urlString = jsonNews?.dictionary?["news"]?.array?[indexPath.row]["link_url"].stringValue{
+            navigationController?.pushViewController(NewsDetailViewController(urlString: urlString), animated: true)
+        }
+        
     }
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
