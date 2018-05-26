@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let navi = window?.rootViewController as? UINavigationController
+        navi?.navigationBar.barTintColor = .red
+        navi?.navigationBar.isTranslucent = false
+        navi?.hidesBarsOnSwipe = true
+
+        application.statusBarStyle = .lightContent
+        let v = application.value(forKey: "statusBar") as? UIView
+        v?.backgroundColor = UIColor.rgb(red: 194, green: 31, blue: 31)
         return true
     }
 

@@ -18,7 +18,6 @@ class HomeNewsViewContrller: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
 
         let path = Bundle.main.path(forResource: "news", ofType: "json")!
         let jsonString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
@@ -30,6 +29,14 @@ class HomeNewsViewContrller: UICollectionViewController {
 
         // Register cell classes
 //        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        let titleLabel = UILabel(frame: CGRect(x: 10, y: 10, width: UIScreen.main.bounds.width, height: 100))
+        titleLabel.text = "News"
+        titleLabel.textColor = UIColor.white
+        titleLabel.font = UIFont.systemFont(ofSize: 20.0)
+        titleLabel.backgroundColor = UIColor.red
+        navigationItem.titleView = titleLabel
+        
+        
         self.collectionView?.reloadData()
         // Do any additional setup after loading the view.
     }
