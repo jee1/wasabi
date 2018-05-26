@@ -77,7 +77,7 @@ def get_contents(url):
     뉴스 정보를 반환한다
 
     :param url:
-    :return: text, keywords, summary, translate_text
+    :return: text, keywords, summary, meta_image
     """
     document = download_content(url)
     if document == None or document == '' :
@@ -86,7 +86,6 @@ def get_contents(url):
     else:
         article = Article(url='')
         article.download(input_html=document)
-    # article.extractor.stopwords
 
     article.parse()
     article.nlp()
@@ -98,12 +97,7 @@ def get_contents(url):
 
     summrize = []
     for txt in reordered:
-
-        translate = trans(text=txt.text.strip(),from_language=article.meta_lang,to_language='ko',host='https://translate.google.com',proxy=None)
-        # print('\torigin: ' + txt.text)
-        # print('\ttranslate: ' + trans(text=txt.text.strip(),from_language=article.meta_lang,to_language='ko',host='https://translate.google.com',proxy=None))
-
-        summrize.append([txt.index, txt.text, translate])
+        summrize.append([txt.index, txt.text])
 
     summrize.sort()
 
@@ -111,18 +105,13 @@ def get_contents(url):
     for txt in summrize[:2]:
         summary += '* ' + txt[1] + '\n'
 
-    translate_text = ''
-    for txt in summrize[:]:
-        print(txt[2])
-        translate_text += str(txt[2]) + '\n'
-
-    return article.text, article.keywords, summary, translate_text
+    return article.text, article.keywords, summary, article.meta_img
 
 
 def run():
     # TODO RSS URL 목록을 DB 에서 가져오는 코드 작성 필요 함.
     # 일단, 기능 개발을 위해 구글뉴스의 RSS 를 가져와서 진행함.
-    urls = ["https://news.google.com/rss/?ned=en&gl=US&hl=en"]
+    urls = ["https://news.google.com/rss/?ned=kr&gl=KR&hl=ko"]
 
     db_session = models.db_session
 
@@ -143,7 +132,7 @@ def write_news_to_db(db_session, feed):
                 link_url_sha1=link_url_sha1,
                 published=feed[2],
                 contents=article[0],
-                kor_contents=article[3],
+                image_url=article[3],
                 summarize=article[2],
                 keywords=','.join(article[1]),
                 scraping_dt=datetime.now(),

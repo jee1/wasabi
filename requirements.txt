@@ -12,3 +12,5 @@ django
 newspaper3k
 nltk
 translate_api
+flask
+flask_sqlalchemy
