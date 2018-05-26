@@ -23,12 +23,6 @@ class HomeNewsViewContrller: UICollectionViewController {
         let jsonString = try? String(contentsOfFile: path, encoding: String.Encoding.utf8)
         jsonNews = JSON(parseJSON: jsonString!)
 
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         let titleLabel = UILabel(frame: CGRect(x: 10, y: 10, width: UIScreen.main.bounds.width, height: 100))
         titleLabel.text = "News"
         titleLabel.textColor = UIColor.white
@@ -80,6 +74,10 @@ class HomeNewsViewContrller: UICollectionViewController {
 
     // MARK: UICollectionViewDelegate
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
+        
+        navigationController?.pushViewController(NewsDetailViewController(urlString: "http://www.yonhapnewstv.co.kr/MYH20180525021400038/"), animated: true)
+    }
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
@@ -113,6 +111,14 @@ class HomeNewsViewContrller: UICollectionViewController {
 
 extension HomeNewsViewContrller : UICollectionViewDelegateFlowLayout{
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        return CGSize(width: self.view.frame.width, height: 150)
+        return CGSize(width: self.view.frame.width, height: 290)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets{
+        return UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
     }
 }

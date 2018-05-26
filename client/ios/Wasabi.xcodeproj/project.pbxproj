@@ -21,6 +21,7 @@
 		C243145A203FD5F200085F6B /* WasabiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2431459203FD5F200085F6B /* WasabiTests.swift */; };
 		C2431465203FD5F200085F6B /* WasabiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2431464203FD5F200085F6B /* WasabiUITests.swift */; };
 		C2E8B2ED20B8D7D600A7CDCA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E8B2EC20B8D7D600A7CDCA /* Extensions.swift */; };
+		C2E8B2EF20B8E1C500A7CDCA /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E8B2EE20B8E1C500A7CDCA /* NewsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		C2431464203FD5F200085F6B /* WasabiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasabiUITests.swift; sourceTree = "<group>"; };
 		C2431466203FD5F200085F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2E8B2EC20B8D7D600A7CDCA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C2E8B2EE20B8E1C500A7CDCA /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
 		D908B5E7EDC75F8CCD5E320A /* Pods-Wasabi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wasabi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wasabi/Pods-Wasabi.release.xcconfig"; sourceTree = "<group>"; };
 		DBBBA15C5554AD6D94BA0187 /* Pods_WasabiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WasabiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC08A45F2AD7E3C0F8A51062 /* Pods-WasabiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WasabiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WasabiUITests/Pods-WasabiUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,11 +132,10 @@
 		C2431443203FD5F200085F6B /* Wasabi */ = {
 			isa = PBXGroup;
 			children = (
+				C2E8B2F020B8E29600A7CDCA /* controllers */,
 				C2027A9120A6843800EB6FDE /* resource */,
 				C2431444203FD5F200085F6B /* AppDelegate.swift */,
-				C2431446203FD5F200085F6B /* FuntionTestViewController.swift */,
 				C2431448203FD5F200085F6B /* Main.storyboard */,
-				C2027A9420A686C800EB6FDE /* HomeNewsViewContrller.swift */,
 				C20465DB20A68162009DD5FC /* TextNewsCell.swift */,
 				C243144B203FD5F200085F6B /* Assets.xcassets */,
 				C243144D203FD5F200085F6B /* LaunchScreen.storyboard */,
@@ -160,6 +161,16 @@
 				C2431466203FD5F200085F6B /* Info.plist */,
 			);
 			path = WasabiUITests;
+			sourceTree = "<group>";
+		};
+		C2E8B2F020B8E29600A7CDCA /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2431446203FD5F200085F6B /* FuntionTestViewController.swift */,
+				C2027A9420A686C800EB6FDE /* HomeNewsViewContrller.swift */,
+				C2E8B2EE20B8E1C500A7CDCA /* NewsDetailViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 		E75F5678ED4EC55A11D1E789 /* Frameworks */ = {
@@ -403,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2E8B2EF20B8E1C500A7CDCA /* NewsDetailViewController.swift in Sources */,
 				C2E8B2ED20B8D7D600A7CDCA /* Extensions.swift in Sources */,
 				C2027A9520A686C800EB6FDE /* HomeNewsViewContrller.swift in Sources */,
 				C2431447203FD5F200085F6B /* FuntionTestViewController.swift in Sources */,
